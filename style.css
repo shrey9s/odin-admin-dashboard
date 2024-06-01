@@ -5,3 +5,11 @@
 .header {
     background-color: lightpink;
 }
+
+.main-content {
+    background-color: lightgreen;
+}
+
+.header-main-container {
+    background-color: lightgray;
+}
