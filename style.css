@@ -30,8 +30,8 @@ html {
 }
 
 body {
-    font-family: 'robotoregular'; /* add fallback */
-    /*line-height: 1.5;*/
+    font-family: 'robotoregular';
+    /* add fallback */
 }
 
 ul {
@@ -79,7 +79,7 @@ a {
     display: grid;
     row-gap: 50px;
     padding: 0 28px;
-   /*border: 1px solid red;*/
+    /*border: 1px solid red;*/
 }
 
 .nav-links-1,
@@ -112,7 +112,8 @@ a {
     /*border: 1px solid aqua;*/
 }
 
-.filter-white { /* Changes colour of SVG icons to white */
+.filter-white {
+    /* Changes colour of SVG icons to white */
     filter: invert(100%) sepia(0%) saturate(7420%) hue-rotate(127deg) brightness(95%) contrast(115%);
 }
 
@@ -127,17 +128,18 @@ a {
 
 .header {
     display: grid;
+    padding: 15px 30px;
     font-family: 'robotobold';
     background-color: #ffffff;
-    padding: 15px 30px;
 }
 
 /* Upper */
 
 .upper-header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center; /* check this again */
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    /* check this again */
     column-gap: 25px;
     margin-bottom: 20px;
     /*border: 1px solid red;*/
@@ -152,7 +154,7 @@ a {
 }
 
 .search-bar {
-    padding: 8px;
+    padding: 10px 15px;
     border: none;
     border-radius: 20px;
     background-color: #e2e8f0;
@@ -171,7 +173,7 @@ a {
     display: grid;
     grid-template-columns: 45px 1fr;
     align-items: center;
-    gap: 10px;
+    column-gap: 10px;
     /*border: 1px solid blue;*/
 }
 
@@ -212,7 +214,7 @@ a {
 .user-actions {
     justify-self: end;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     column-gap: 25px;
     /*border: 1px solid blue;*/
@@ -226,13 +228,68 @@ a {
     color: #ffffff;
     font-family: inherit;
     background-color: #1892d4;
+    cursor: pointer;
 }
 
 /* ------------------ */
 
+/* ----- Main Content ----- */
+
 .main-content {
+    line-height: 1.5;
     background-color: lightgreen;
 }
 
+.main-content h3,
+.main-content h4,
+.main-content h5 {
+    font-family: 'robotobold';
+}
 
+/* Projects Section */
 
+.projects {
+    background-color: #e2e8f0;
+}
+
+.projects h3 {
+    margin-bottom: 10px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    height: 200px;
+    display: grid;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 8px solid goldenrod;
+    background-color: seashell;
+}
+
+.project-card p {
+    font-size: 15px;
+    color: #808080;
+}
+
+.project-actions {
+    align-self: end;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    align-items: center;
+    justify-items: center;
+    column-gap: 25px;
+}
+
+.project-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* ---------------- */
