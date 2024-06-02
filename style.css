@@ -128,16 +128,19 @@ a {
 .header {
     display: grid;
     font-family: 'robotobold';
-    background-color: lightpink;
+    background-color: #ffffff;
+    padding: 15px 30px;
 }
+
+/* Upper */
 
 .upper-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 15px 30px;
+    align-items: center; /* check this again */
     column-gap: 25px;
-    background-color: #ffffff;
+    margin-bottom: 20px;
+    /*border: 1px solid red;*/
 }
 
 .search-container {
@@ -151,7 +154,7 @@ a {
 .search-bar {
     padding: 8px;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: #e2e8f0;
 }
 
@@ -177,6 +180,52 @@ a {
     height: 45px;
     background-color: yellowgreen;
     border-radius: 100px;
+}
+
+/* Lower */
+
+.lower-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 25px;
+    /*border: 1px solid blue;*/
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    align-items: center;
+    column-gap: 10px;
+    /*border: 1px solid red;*/
+}
+
+.greeting .profile-picture {
+    width: 65px;
+    height: 65px;
+}
+
+.greeting p {
+    font-size: 14px;
+}
+
+.user-actions {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 25px;
+    /*border: 1px solid blue;*/
+}
+
+.user-actions button {
+    width: 90px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: inherit;
+    background-color: #1892d4;
 }
 
 /* ------------------ */
