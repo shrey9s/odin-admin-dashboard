@@ -121,11 +121,24 @@ a {
 
 .header-main-container {
     display: grid;
+    grid-template-rows: min-content 1fr;
 }
 
 /* ----- Header ----- */
 
 .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, min-content);
+    align-items: center;
+    row-gap: 30px;
+
+    padding: 15px 30px;
+    font-family: 'robotobold';
+    background-color: #ffffff;
+}
+
+/*.header {
     display: grid;
     padding: 15px 30px;
     font-family: 'robotobold';
@@ -134,15 +147,22 @@ a {
 
 /* Upper */
 
-.upper-header {
+/*.upper-header {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    align-items: center;
-    /* check this again */
+    align-items: center; /* check this again
     column-gap: 25px;
     margin-bottom: 20px;
-    /*border: 1px solid red;*/
+    /*border: 1px solid red;
+
+.lower-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 25px;
+    /*border: 1px solid blue;
 }
+}*/
 
 .search-container {
     display: grid;
@@ -183,16 +203,6 @@ a {
     border-radius: 100px;
 }
 
-/* Lower */
-
-.lower-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    column-gap: 25px;
-    /*border: 1px solid blue;*/
-}
-
 .greeting {
     display: grid;
     grid-template-columns: 65px 1fr;
@@ -214,6 +224,7 @@ a {
     justify-self: end;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     justify-items: center;
     column-gap: 25px;
     /*border: 1px solid blue;*/
@@ -239,7 +250,7 @@ a {
     row-gap: 30px;*/
     column-gap: 20px;
     
-    padding: 25px;
+    padding: 30px;
     line-height: 1.5;
     background-color: #e2e8f0;
 }
@@ -346,7 +357,8 @@ a {
 
 .trending-profiles {
     display: grid;
-    justify-content: start;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*justify-content: start;*/
     border-radius: 5px;
     background-color: seashell;
     padding: 15px;
