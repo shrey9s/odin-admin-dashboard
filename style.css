@@ -30,8 +30,11 @@ html {
 }
 
 body {
-    font-family: 'robotoregular';
-    /* add fallback */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: min-content 1fr; 
+    font-family: 'robotoregular'; /* add fallback */
 }
 
 ul {
@@ -43,17 +46,10 @@ a {
     text-decoration: none;
 }
 
-.grid-container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 250px 5fr;
-    grid-template-rows: min-content 1fr; 
-}
-
 /* ----- Sidebar ----- */
 
 .sidebar {
-    grid-row: 1/3;
+    grid-row: 1 / 3;
     display: grid;
     align-content: start;
     row-gap: 30px;
@@ -69,26 +65,22 @@ a {
     align-items: center;
     column-gap: 10px;
     padding: 15px;
-    /*border: 1px solid red;*/
 }
 
 .dashboard-title img {
     width: 45px;
-    /*border: 1px solid lightgreen;*/
 }
 
 .nav-links {
     display: grid;
     row-gap: 50px;
     padding: 0 28px;
-    /*border: 1px solid red;*/
 }
 
 .nav-links-1,
 .nav-links-2 {
     display: grid;
     row-gap: 20px;
-    /*border: 1px solid pink;*/
 }
 
 .nav-links-1 {
@@ -101,36 +93,26 @@ a {
     grid-template-columns: 20px 1fr;
     align-items: center;
     column-gap: 20px;
-    /*border: 1px solid yellow;*/
 }
 
 .icon {
     width: 20px;
-    /*border: 1px solid aquamarine;*/
+}
+
+.filter-white { /* Changes colour of SVG icons to white */
+    filter: invert(100%) sepia(0%) saturate(7420%) hue-rotate(127deg) brightness(95%) contrast(115%);
 }
 
 .nav-links a {
     font-size: 18px;
-    /*border: 1px solid aqua;*/
 }
-
-.filter-white {
-    /* Changes colour of SVG icons to white */
-    filter: invert(100%) sepia(0%) saturate(7420%) hue-rotate(127deg) brightness(95%) contrast(115%);
-}
-
-/* 
-.header-main-container {
-    display: grid;
-    grid-template-rows: min-content 1fr;
-}*/
 
 /* ----- Header ----- */
 
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*grid-template-rows: min-content 1fr;*/
+    /*grid-template-rows: repeat(2, min-content);*/
     align-items: center;
     row-gap: 30px;
 
@@ -139,38 +121,11 @@ a {
     background-color: #ffffff;
 }
 
-/*.header {
-    display: grid;
-    padding: 15px 30px;
-    font-family: 'robotobold';
-    background-color: #ffffff;
-}
-
-/* Upper */
-
-/*.upper-header {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center; /* check this again
-    column-gap: 25px;
-    margin-bottom: 20px;
-    /*border: 1px solid red;
-
-.lower-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    column-gap: 25px;
-    /*border: 1px solid blue;
-}
-}*/
-
 .search-container {
     display: grid;
     grid-template-columns: 20px 1fr;
     align-items: center;
     column-gap: 10px;
-    /*border: 1px solid red;*/
 }
 
 .search-bar {
@@ -186,7 +141,6 @@ a {
     grid-template-columns: 20px 1fr;
     align-items: center;
     column-gap: 25px;
-    /*border: 1px solid red;*/
 }
 
 .user-profile {
@@ -194,7 +148,6 @@ a {
     grid-template-columns: 45px 1fr;
     align-items: center;
     column-gap: 10px;
-    /*border: 1px solid blue;*/
 }
 
 .profile-picture {
@@ -209,7 +162,6 @@ a {
     grid-template-columns: 65px 1fr;
     align-items: center;
     column-gap: 10px;
-    /*border: 1px solid red;*/
 }
 
 .greeting .profile-picture {
@@ -228,7 +180,6 @@ a {
     align-items: center;
     justify-items: center;
     column-gap: 25px;
-    /*border: 1px solid blue;*/
 }
 
 .user-actions button {
@@ -247,9 +198,8 @@ a {
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    /*grid-template-rows: repeat(2, 1fr);
-    row-gap: 30px;*/
-    column-gap: 20px;
+    grid-template-rows: min-content 1fr;
+    gap: 30px;
     
     padding: 30px;
     line-height: 1.5;
@@ -264,9 +214,9 @@ a {
 
 /* Projects Section */
 
-/*.projects-section {
+.projects-section {
     grid-row: 1 / 3;
-}*/
+}
 
 .projects-section h3 {
     margin-bottom: 10px;
@@ -286,11 +236,6 @@ a {
     border-left: 8px solid goldenrod;
     background-color: seashell;    
 }
-
-/*.project-description {
-    background-color: lightpink;
-    align-self: start;
-}*/
 
 .project-card p {
     font-size: 15px;
@@ -314,10 +259,6 @@ a {
 }
 
 /* Announcements Section */
-
-.announcements-section {
-    margin-bottom: 30px;
-}
 
 .announcements-section h3 {
     margin-bottom: 10px;
