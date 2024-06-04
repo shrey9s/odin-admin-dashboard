@@ -58,7 +58,7 @@ body {
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: min-content 1fr; 
-    font-family: 'robotoregular'; /* add fallback */
+    -webkit-font-smoothing: antialiased;
 }
 
 ul {
@@ -186,7 +186,7 @@ a {
 .profile-picture {
     width: 45px;
     height: 45px;
-    background-color: yellowgreen;
+    background-color: #add8e6;
     border-radius: 100px;
 }
 
@@ -318,8 +318,7 @@ a {
 
 .announcements {
     display: grid;
-    justify-content: start;
-
+    /*justify-content: start;*/
     padding: 15px 20px;
     border-radius: 5px;
     background-color: seashell;
@@ -327,7 +326,7 @@ a {
 
 .announcement {
     padding: 15px 5px;
-    border-bottom: 1px solid #808080;
+    border-bottom: 2px dashed goldenrod;
 }
 
 .announcement:last-child {
@@ -339,7 +338,7 @@ a {
 }
 
 .announcement p {
-    font-size: 13px;
+    font-size: 12px;
     color: #808080;
 }
 
@@ -347,29 +346,34 @@ a {
 
 .trending-section h3 {
     margin-bottom: 10px;
+    font-family: 'pixelify_sans';
 }
 
 .trending-profiles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /*justify-content: start;*/
-    
-    padding: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    /*justify-content: start;*/    
+    padding: 25px;
     border-radius: 5px;
     background-color: seashell;
+    gap: 20px;
 }
 
 .trending-profile {
     display: grid;
     grid-template-columns: 45px 1fr;
-    align-items: center;
+    grid-template-rows: min-content 1fr;
+    align-items: start;
     column-gap: 10px;
-    padding: 10px;
+}
+
+.trending-profile .profile-picture {
+    grid-row: 1 / 3;
 }
 
 .trending-profile .handle {
-    font-size: 14px;
-    font-family: 'robotobold';
+    font-size: 15px;
+    font-weight: 700px;
     color: black;
 }
 
@@ -378,7 +382,31 @@ a {
     color: #808080;
 }
 
-/* Pixelated borders generated from https://pixelcorners.lukeb.co.uk/ - built by Luke Bonaccorsi */
+.trending-profile:first-child .profile-picture {
+    background-color: #f08080;
+}
+
+.trending-profile:nth-child(2) .profile-picture {
+    background-color: #dda0dd;
+}
+
+.trending-profile:nth-child(3) .profile-picture {
+    background-color: #87cefa;
+}
+
+.trending-profile:nth-child(4) .profile-picture {
+    background-color: #ff8c00;
+}
+
+.trending-profile:nth-child(5) .profile-picture {
+    background-color: #90ee90;
+}
+
+.trending-profile:nth-child(6) .profile-picture {
+    background-color: #a322ff;
+}
+
+/* Pixelated borders generated from https://pixelcorners.lukeb.co.uk/ built by Luke Bonaccorsi */
 
 .pixel-corners,
 .pixel-corners--wrapper {
