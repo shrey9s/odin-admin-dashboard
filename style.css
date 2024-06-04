@@ -207,7 +207,7 @@ a {
 }
 
 .greeting p {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .user-actions {
@@ -241,13 +241,18 @@ a {
     
     padding: 30px;
     line-height: 1.5;
+    font-family: 'pixelify_sans';
     background-color: #e2e8f0;
 }
 
 .main-content h3,
 .main-content h4,
 .main-content h5 {
-    font-family: 'robotobold';
+    font-weight: 700;
+}
+
+.main-content h3 {
+    font-size: 22px;
 }
 
 /* Projects Section */
@@ -262,17 +267,21 @@ a {
 
 .project-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 25px;
 }
 
 .project-card {
-    height: 235px;
+    height: 250px;
     display: grid; 
     padding: 25px 20px;
-    border-radius: 5px;
-    border-left: 8px solid goldenrod;
+    /*border-radius: 5px;
+    border-left: 8px solid goldenrod;*/
     background-color: seashell;    
+}
+
+.project-card h4 {
+    font-size: 18px;
 }
 
 .project-card p {
@@ -284,7 +293,7 @@ a {
     align-self: end;
     justify-self: end;
     display: grid;
-    grid-template-columns: repeat(3, 20px);
+    grid-template-columns: repeat(3, 25px);
     align-items: center;
     justify-items: center;
     column-gap: 25px;
@@ -294,6 +303,11 @@ a {
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.project-actions .icon {
+    width: 25px;
+    height: 25px;
 }
 
 /* Announcements Section */
@@ -365,4 +379,135 @@ a {
 }
 
 /* Pixelated borders generated from https://pixelcorners.lukeb.co.uk/ - built by Luke Bonaccorsi */
+
+.pixel-corners,
+.pixel-corners--wrapper {
+  clip-path: polygon(0px calc(100% - 20px),
+    5px calc(100% - 20px),
+    5px calc(100% - 10px),
+    10px calc(100% - 10px),
+    10px calc(100% - 5px),
+    20px calc(100% - 5px),
+    20px 100%,
+    calc(100% - 20px) 100%,
+    calc(100% - 20px) calc(100% - 5px),
+    calc(100% - 10px) calc(100% - 5px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 5px) calc(100% - 10px),
+    calc(100% - 5px) calc(100% - 20px),
+    100% calc(100% - 20px),
+    100% 20px,
+    calc(100% - 5px) 20px,
+    calc(100% - 5px) 10px,
+    calc(100% - 10px) 10px,
+    calc(100% - 10px) 5px,
+    calc(100% - 20px) 5px,
+    calc(100% - 20px) 0px,
+    20px 0px,
+    20px 5px,
+    10px 5px,
+    10px 10px,
+    5px 10px,
+    5px 20px,
+    0px 20px);
+  position: relative;
+}
+.pixel-corners {
+  border: 5px solid transparent;
+}
+.pixel-corners--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+.pixel-corners--wrapper .pixel-corners {
+  display: block;
+  clip-path: polygon(5px 20px,
+    10px 20px,
+    10px 10px,
+    20px 10px,
+    20px 5px,
+    calc(100% - 20px) 5px,
+    calc(100% - 20px) 10px,
+    calc(100% - 10px) 10px,
+    calc(100% - 10px) 20px,
+    calc(100% - 5px) 20px,
+    calc(100% - 5px) calc(100% - 20px),
+    calc(100% - 10px) calc(100% - 20px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 20px) calc(100% - 10px),
+    calc(100% - 20px) calc(100% - 5px),
+    20px calc(100% - 5px),
+    20px calc(100% - 10px),
+    10px calc(100% - 10px),
+    10px calc(100% - 20px),
+    5px calc(100% - 20px));
+}
+.pixel-corners::after,
+.pixel-corners--wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 20px),
+    5px calc(100% - 20px),
+    5px calc(100% - 10px),
+    10px calc(100% - 10px),
+    10px calc(100% - 5px),
+    20px calc(100% - 5px),
+    20px 100%,
+    calc(100% - 20px) 100%,
+    calc(100% - 20px) calc(100% - 5px),
+    calc(100% - 10px) calc(100% - 5px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 5px) calc(100% - 10px),
+    calc(100% - 5px) calc(100% - 20px),
+    100% calc(100% - 20px),
+    100% 20px,
+    calc(100% - 5px) 20px,
+    calc(100% - 5px) 10px,
+    calc(100% - 10px) 10px,
+    calc(100% - 10px) 5px,
+    calc(100% - 20px) 5px,
+    calc(100% - 20px) 0px,
+    20px 0px,
+    20px 5px,
+    10px 5px,
+    10px 10px,
+    5px 10px,
+    5px 20px,
+    0px 20px,
+    0px 50%,
+    5px 50%,
+    5px 20px,
+    10px 20px,
+    10px 10px,
+    20px 10px,
+    20px 5px,
+    calc(100% - 20px) 5px,
+    calc(100% - 20px) 10px,
+    calc(100% - 10px) 10px,
+    calc(100% - 10px) 20px,
+    calc(100% - 5px) 20px,
+    calc(100% - 5px) calc(100% - 20px),
+    calc(100% - 10px) calc(100% - 20px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 20px) calc(100% - 10px),
+    calc(100% - 20px) calc(100% - 5px),
+    20px calc(100% - 5px),
+    20px calc(100% - 10px),
+    10px calc(100% - 10px),
+    10px calc(100% - 20px),
+    5px calc(100% - 20px),
+    5px 50%,
+    0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: goldenrod;
+  display: block;
+  pointer-events: none;
+}
+.pixel-corners::after {
+  margin: -5px;
+}
+
 
