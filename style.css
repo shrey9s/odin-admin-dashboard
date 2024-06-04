@@ -272,12 +272,13 @@ a {
 }
 
 .project-card {
-    height: 250px;
     display: grid; 
+    grid-template-rows: 1fr min-content; /* to standardise row sizes across cards */
+    row-gap: 10px;
+
+    height: 260px;
     padding: 25px 20px;
-    /*border-radius: 5px;
-    border-left: 8px solid goldenrod;*/
-    background-color: seashell;    
+    background-color: seashell;
 }
 
 .project-card h4 {
