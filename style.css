@@ -81,8 +81,9 @@ a {
     font-size: 20px;
     font-weight: 700;
     font-family: 'pixelify_sans';
-    color: #ffffff;
-    background-color: #1892d4;
+    
+    color:seashell;
+    background-color: #5C3D2E /*#6F4E37;*/
 }
 
 .dashboard-title {
@@ -122,10 +123,6 @@ a {
     height: 20px;
 }
 
-.filter-white { /* Changes colour of SVG icons to white */
-    filter: invert(100%) sepia(0%) saturate(7420%) hue-rotate(127deg) brightness(95%) contrast(115%);
-}
-
 /* ----- Header ----- */
 
 .header {
@@ -139,7 +136,10 @@ a {
     padding: 15px 30px;
     font-family: 'pixelify_sans';
     font-weight: 700;
-    background-color: #ffffff;
+    background-color: #FFFBF5;
+
+    box-shadow: 2px 5px 5px rgb(178, 160, 149);
+    z-index: 1;
 }
 
 .search-container {
@@ -155,10 +155,9 @@ a {
 }
 
 #search-bar {
-    padding: 10px 15px;
-    border: none;
+    padding: 8px 15px;
+    border: 2px solid #614124;
     border-radius: 20px;
-    background-color: #e2e8f0;
     font-size: 15px;
     font-weight: normal;
     font-family: inherit;
@@ -186,7 +185,7 @@ a {
 .profile-picture {
     width: 45px;
     height: 45px;
-    background-color: #add8e6;
+    background-color: #FFD95A;
     border-radius: 100px;
 }
 
@@ -226,8 +225,8 @@ a {
     border-radius: 20px;
     font-size: 15px;
     font-family: inherit;
-    color: #ffffff;
-    background-color: #1892d4;
+    color: seashell;
+    background-color: #CD5C08; /*#3085C3;*/
     cursor: pointer;
 }
 
@@ -242,7 +241,7 @@ a {
     padding: 30px;
     line-height: 1.5;
     font-family: 'pixelify_sans';
-    background-color: #e2e8f0;
+    background-color: #FFECD6;
 }
 
 .main-content h3,
@@ -278,7 +277,7 @@ a {
 
     height: 260px;
     padding: 25px 20px;
-    background-color: seashell;
+    background-color: #ffdeb3;
 }
 
 .project-card h4 {
@@ -287,7 +286,7 @@ a {
 
 .project-card p {
     font-size: 15px;
-    color: #808080;
+    color: #5C3D2E;
 }
 
 .project-actions {
@@ -322,12 +321,12 @@ a {
     /*justify-content: start;*/
     padding: 15px 20px;
     border-radius: 5px;
-    background-color: seashell;
+    background-color:#EAC696;
 }
 
 .announcement {
     padding: 15px 5px;
-    border-bottom: 2px dashed goldenrod;
+    border-bottom: 2px dashed #A67B5B;
 }
 
 .announcement:last-child {
@@ -340,7 +339,7 @@ a {
 
 .announcement p {
     font-size: 12px;
-    color: #808080;
+    color: #5C3D2E;
 }
 
 /* ----- Trending Section ----- */
@@ -356,7 +355,7 @@ a {
     /*justify-content: start;*/    
     padding: 25px;
     border-radius: 5px;
-    background-color: seashell;
+    background-color:#EAC696;
     gap: 20px;
 }
 
@@ -380,7 +379,7 @@ a {
 
 .trending-profile p {
     font-size: 13px;
-    color: #808080;
+    color: #5C3D2E;
 }
 
 .trending-profile:first-child .profile-picture {
@@ -406,6 +405,14 @@ a {
 .trending-profile:nth-child(6) .profile-picture {
     background-color: #a322ff;
 }
+
+.filter-white { /* Changes colour of SVG icons to white */
+    filter: invert(97%) sepia(37%) saturate(413%) hue-rotate(296deg) brightness(101%) contrast(103%);
+}
+
+/*.filter-brown {
+    filter: invert(24%) sepia(21%) saturate(1396%) hue-rotate(347deg) brightness(94%) contrast(84%);
+}*/
 
 /* Pixelated borders generated from https://pixelcorners.lukeb.co.uk/ built by Luke Bonaccorsi */
 
@@ -531,7 +538,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background: goldenrod;
+  background:#9e6447;
   display: block;
   pointer-events: none;
 }
@@ -539,4 +546,134 @@ a {
   margin: -5px;
 }
 
+/*------*/
 
+.pixel-corners-2,
+.pixel-corners--wrapper {
+  clip-path: polygon(0px calc(100% - 20px),
+    5px calc(100% - 20px),
+    5px calc(100% - 10px),
+    10px calc(100% - 10px),
+    10px calc(100% - 5px),
+    20px calc(100% - 5px),
+    20px 100%,
+    calc(100% - 20px) 100%,
+    calc(100% - 20px) calc(100% - 5px),
+    calc(100% - 10px) calc(100% - 5px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 5px) calc(100% - 10px),
+    calc(100% - 5px) calc(100% - 20px),
+    100% calc(100% - 20px),
+    100% 20px,
+    calc(100% - 5px) 20px,
+    calc(100% - 5px) 10px,
+    calc(100% - 10px) 10px,
+    calc(100% - 10px) 5px,
+    calc(100% - 20px) 5px,
+    calc(100% - 20px) 0px,
+    20px 0px,
+    20px 5px,
+    10px 5px,
+    10px 10px,
+    5px 10px,
+    5px 20px,
+    0px 20px);
+  position: relative;
+}
+.pixel-corners-2 {
+  border: 5px solid transparent;
+}
+.pixel-corners--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+.pixel-corners--wrapper .pixel-corners-2 {
+  display: block;
+  clip-path: polygon(5px 20px,
+    10px 20px,
+    10px 10px,
+    20px 10px,
+    20px 5px,
+    calc(100% - 20px) 5px,
+    calc(100% - 20px) 10px,
+    calc(100% - 10px) 10px,
+    calc(100% - 10px) 20px,
+    calc(100% - 5px) 20px,
+    calc(100% - 5px) calc(100% - 20px),
+    calc(100% - 10px) calc(100% - 20px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 20px) calc(100% - 10px),
+    calc(100% - 20px) calc(100% - 5px),
+    20px calc(100% - 5px),
+    20px calc(100% - 10px),
+    10px calc(100% - 10px),
+    10px calc(100% - 20px),
+    5px calc(100% - 20px));
+}
+.pixel-corners-2::after,
+.pixel-corners--wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 20px),
+    5px calc(100% - 20px),
+    5px calc(100% - 10px),
+    10px calc(100% - 10px),
+    10px calc(100% - 5px),
+    20px calc(100% - 5px),
+    20px 100%,
+    calc(100% - 20px) 100%,
+    calc(100% - 20px) calc(100% - 5px),
+    calc(100% - 10px) calc(100% - 5px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 5px) calc(100% - 10px),
+    calc(100% - 5px) calc(100% - 20px),
+    100% calc(100% - 20px),
+    100% 20px,
+    calc(100% - 5px) 20px,
+    calc(100% - 5px) 10px,
+    calc(100% - 10px) 10px,
+    calc(100% - 10px) 5px,
+    calc(100% - 20px) 5px,
+    calc(100% - 20px) 0px,
+    20px 0px,
+    20px 5px,
+    10px 5px,
+    10px 10px,
+    5px 10px,
+    5px 20px,
+    0px 20px,
+    0px 50%,
+    5px 50%,
+    5px 20px,
+    10px 20px,
+    10px 10px,
+    20px 10px,
+    20px 5px,
+    calc(100% - 20px) 5px,
+    calc(100% - 20px) 10px,
+    calc(100% - 10px) 10px,
+    calc(100% - 10px) 20px,
+    calc(100% - 5px) 20px,
+    calc(100% - 5px) calc(100% - 20px),
+    calc(100% - 10px) calc(100% - 20px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 20px) calc(100% - 10px),
+    calc(100% - 20px) calc(100% - 5px),
+    20px calc(100% - 5px),
+    20px calc(100% - 10px),
+    10px calc(100% - 10px),
+    10px calc(100% - 20px),
+    5px calc(100% - 20px),
+    5px 50%,
+    0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #8c684c;
+  display: block;
+  pointer-events: none;
+}
+.pixel-corners-2::after {
+  margin: -5px;
+}
