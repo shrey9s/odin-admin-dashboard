@@ -73,14 +73,20 @@ a {
 
 .sidebar {
     grid-row: 1 / 3;
-    display: grid;
-    align-content: start;
-    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
 
     font-size: 20px;
     color: seashell;
     background-color: #5C3D2E;
     /*#6F4E37;*/
+}
+
+.aside {
+    flex: 1;
+    display: grid;
+    align-content: start;
+    row-gap: 30px;
 }
 
 .dashboard-title {
@@ -115,12 +121,22 @@ a {
     column-gap: 20px;
 }
 
-.sidebar li:hover {
+.nav-links li:hover {
     transform: translateY(-1px);
 }
 
-.sidebar li:active {
+.nav-links li:active {
     transform: translateY(1px);
+}
+
+.attributions {
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.attributions li {
+    padding: 5px;
 }
 
 .sidebar a:hover {
