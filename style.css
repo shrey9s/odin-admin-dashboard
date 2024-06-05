@@ -79,7 +79,6 @@ a {
     font-size: 20px;
     color: seashell;
     background-color: #5C3D2E;
-    /*#6F4E37;*/
 }
 
 .aside {
@@ -255,7 +254,6 @@ a {
     font-family: inherit;
     color: seashell;
     background-color: #CD5C08;
-    /* #3085C3; */
     cursor: pointer;
 }
 
@@ -280,7 +278,6 @@ a {
     line-height: 1.5;
     font-family: 'pixelify_sans';
     background-color: #FFECD6;
-    /* FFEBC9 */
 }
 
 .main-content h3 {
@@ -421,7 +418,8 @@ a {
 .trending-profile:hover {
     img {
         transform: scale(1.2);
-    }      
+    }
+
     .handle {
         transform: translateY(-1px);
     }
@@ -473,10 +471,6 @@ a {
     /* Changes colour of SVG icons to seashell-white */
     filter: invert(97%) sepia(37%) saturate(413%) hue-rotate(296deg) brightness(101%) contrast(103%);
 }
-
-/*.filter-brown {
-    filter: invert(24%) sepia(21%) saturate(1396%) hue-rotate(347deg) brightness(94%) contrast(84%);
-}*/
 
 /* Pixelated borders generated from https://pixelcorners.lukeb.co.uk/ built by Luke Bonaccorsi */
 .pixel-corners,
